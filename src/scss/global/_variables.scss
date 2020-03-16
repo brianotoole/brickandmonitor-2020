@@ -1,0 +1,55 @@
+/*********************************************************
+  Variables
+  @NOTE: variable naming is using BEM conventions
+*********************************************************/
+
+// generic color names
+$red: #e07a5f;
+$orange: #e15931;
+$offgray: #7c9091;
+$silver: #a0a0a0;
+$blue: #001c3e;
+$blue-light: #033777;
+$green: #77aca2;
+$black: #595851;
+$white: #ffffff;
+$gray: #acaba8;
+$gray-light: #e6e4e2;
+$gray-med: darken($gray-light, 10%);
+$gray-dark: #555555;
+
+// brand colors
+$color__primary: #003463;
+$color__secondary: #daccc0;
+$color__tertiary: #e6eaf0;
+$color__text: #444;
+$color__white: $white;
+$color__black: $black;
+
+// utility colors
+$color__error: $red;
+$color__success: $green;
+
+// shades
+$color__primary--dark: darken($color__primary, 7%);
+$color__secondary--dark: darken($color__secondary, 7%);
+$color__tertiary--dark: darken($color__tertiary, 7%);
+
+// borders
+$color__border: $gray;
+$color__border--light: $gray-light;
+$color__border--dark: $gray-dark;
+
+// fonts
+$font__heading: adriane, sans-serif;
+$font__subheading: freight-sans-pro, sans-serif;
+$font__body: neue-haas-grotesk-display, sans-serif;
+$font-size: 1rem; //1rem == 16px
+
+// breakpoints
+$desktop-wide: 1200px;
+$desktop: 920px;
+$tablet: 768px;
+$less-tablet: 767px;
+$mobile: 480px;
+$phone: $mobile;
