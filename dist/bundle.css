@@ -1979,7 +1979,7 @@ textarea {
   Footer
 *********************************************************/
 .footer {
-  background-color: #f9f8f7; }
+  background-color: white; }
   .footer ul,
   .footer li {
     list-style: none; }
@@ -2122,7 +2122,7 @@ textarea {
   background-color: #fff;
   color: #003463;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat; }
   @media (max-width: 768px) {
     .hero {
@@ -2150,8 +2150,8 @@ textarea {
   .hero--has-overlay {
     position: relative; }
     .hero--has-overlay:before {
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(black));
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, black 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), to(white));
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, white 100%);
       content: "";
       height: 100%;
       left: 0;
@@ -2162,7 +2162,7 @@ textarea {
       width: 100%;
       z-index: 2; }
     .hero--has-overlay:after {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(255, 255, 255, 0.97);
       content: "";
       height: 100%;
       left: 0;
