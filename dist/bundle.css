@@ -2064,6 +2064,27 @@ textarea {
   text-align: center;
   color: #444; }
 
+/* HERO BG */
+.hero__bg {
+  background-image: url("home-hero-bg.4acd32aa.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 115px;
+  right: 0; }
+
+.hero__mask {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("home-hero-bg-mask.04eeb9b1.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 3; }
+
 .blog .filters {
   max-width: 350px;
   margin: 0 auto; }
@@ -3153,4 +3174,4 @@ textarea {
   font-family: neue-haas-grotesk-display, sans-serif; }
 
 
-/*# sourceMappingURL=/bundle.css.map */
+/*# sourceMappingURL=bundle.css.map */

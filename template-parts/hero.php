@@ -15,7 +15,7 @@ $slug_name = get_post_field('post_name', get_post());
 
 
 <?php if (is_front_page()) : ?>
-<section class="hero hero--home hero--full-height hero--<?php echo $hero_background_position ?>" style="background-image:url('<?php echo $hero_image['url']; ?>');">
+<section class="row hero hero--home hero--full-height hero--<?php echo $hero_background_position ?>" style="background-image:url('<?php echo $hero_image['url']; ?>');">
   <div class="hero__content container js-reveal-text">
       <h1 class="hero__title"><?php echo (!empty($hero_title) ? ''.$hero_title.'' : ''.the_title().'') ?></h1>
       <p class="hero__subtitle"><?php echo $hero_subtitle; ?></p>
@@ -25,6 +25,10 @@ $slug_name = get_post_field('post_name', get_post());
       </div><!--/.hero__btn-container-->
       <?php endif; ?>
   </div><!--/.hero__content-->
+  
+  <div class="hero__bg">
+  <div class="hero__mask"></div>
+  </div>
 </section><!--/.hero-->
 
 <?php else : ?>

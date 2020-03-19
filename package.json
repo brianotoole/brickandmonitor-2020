@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/entry.js",
   "scripts": {
-    "watch": "parcel serve src/entry.js --no-cache --out-dir dist --out-file bundle",
+    "watch": "parcel serve src/entry.js --no-cache --out-dir dist --out-file bundle --public-url ./",
     "build": "parcel build src/entry.js --no-source-maps --no-cache --out-dir dist --out-file bundle --no-hmr"
   },
   "dependencies": {
