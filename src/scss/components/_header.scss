@@ -92,6 +92,13 @@ $header-height: 145px;
   color: $color__primary;
 }
 
+.nav-desktop li.nav-btn {
+  a {
+    @extend .btn--has-arrow;
+    margin-left: rem(100);
+  }
+}
+
 /**
   * Nav-Toggle / Hamburger
   */

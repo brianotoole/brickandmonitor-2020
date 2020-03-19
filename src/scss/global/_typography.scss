@@ -140,15 +140,3 @@ pre {
   padding-top: rem(40);
   padding-bottom: rem(40);
 }
-
-.entry-content a {
-  @extend .link-underline;
-}
-
-.alt-content a {
-  @extend .link-underline;
-  &:before,
-  &:after {
-    height: 1px!important;
-  }
-}

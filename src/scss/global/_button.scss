@@ -1,252 +1,81 @@
-a {
-  color: $color__primary;
-}
-
-button {
-  cursor: pointer;
-}
-
-.link-underline {
-  color: $color__primary;
-  position: relative;
-  overflow: hidden;
-  white-space: pre;
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: currentColor;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0);
-    background-color: #fff;
-    transition-duration: 0.75s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition-property: transform;
-    transform-origin: right;
-    z-index: 1;
-  }
-  &:hover:after {
-    transform: scaleX(1);
-    transition-duration: 0.45s;
-    transform-origin: left;
-  }
-  &--no-underline {
-    &:before {
-      height: 0;
-    }
-    &:after {
-      background-color: #fff;
-    }
-  }
-}
-
-.button-wrapper {
-  display: inline-block;
-  margin-top: 40px;
-  background: white;
-  width: auto;
-  z-index: -1;
-}
+/*********************************************************
+    Buttons
+*********************************************************/
 
 .btn {
-  z-index: 5;
   display: inline-block;
-  position: relative;
-  padding: rem(15) rem(45);
-
-  font-size: 1.25rem;
-  color: $color__black;
-  // background: white;
-  transition: all 0.25s cubic-bezier(0.77, 0, 0.175, 1);
+  padding: 0 rem(10);
+  height: rem(45);
+  line-height: rem(45);
+  font-size: rem(16);
+  color: $color__white;
+  background-color: $color__primary;
+  border-radius: rem(4);
+  border: 1px solid $color__primary;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
   cursor: pointer;
-  user-select: none;
-  &:hover {
-    text-decoration: none;
+  transition: all 0.2s linear;
+  &:hover,
+  &:focus {
+      text-decoration: none;
+      color: $color__white;
+      background-color: $color__primary--dark;
   }
-
-  &--primary {
+  &--secondary {
+      background-color: $color__secondary;
+      border-color: $color__secondary;
+      &:hover,
+      &:focus {
+          background-color: $color__secondary--dark;
+      }
+  }
+  &--muted {
+      color: $color__primary;
+      background-color: transparent;
+      border-color: $color__primary;
+      &:hover,
+      &:focus {
+          background-color: $color__primary;
+          border-color: $color__primary--dark;
+      }
+  }
+  &--large {
+      padding: rem(15) rem(25);
+      font-size: rem(18);
+  }
+  &--disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+  }
+  &--block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+  }
+  &--has-arrow {
+    position: relative;
+    padding-left: rem(50);
+    padding-right: rem(30);
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    //margin-left: rem(100);
     background: $color__primary;
-    color: #fff;
-  }
-
-  &--transparent {
-    background: transparent;
-    border: 1px solid $color__secondary;
-    color: #fff;
-  }
-
-  &--white {
-    background: #fff;
-    color: $color__black;
-    &:hover,
-    &:focus {
-      background: $color__primary !important;
-      color: #fff;
-      transition-delay: 0s !important;
+    color: $color__white;
+    &:before {
+      content: '';
+      position: absolute;
+      background: $color__secondary;
+      bottom: 27px;
+      display: block;
+      height: 2px;
+      left: -60px;
+      width: 70px;
+      padding-left: rem(58);
+      padding-right: rem(28);
+      transition: all 0.25s ease-in-out;
     }
   }
-}
-
-.btn:before,
-.btn:after {
-  content: "";
-  position: absolute;
-  transition: inherit;
-  z-index: -1;
-}
-
-.btn:hover {
-  color: $color__black;
-  transition-delay: 0.5s;
-}
-
-.btn:hover:before {
-  transition-delay: 0s;
-}
-
-.btn:hover:after {
-  background: $color__tertiary;
-  transition-delay: 0.4s;
-}
-
-/* From Top */
-
-.from-top:before,
-.from-top:after {
-  left: 0;
-  height: 0;
-  width: 100%;
-}
-
-.from-top:before {
-  bottom: 0;
-  border: 1px solid $color__black;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.from-top:after {
-  top: 0;
-  height: 0;
-}
-
-.from-top:hover:before,
-.from-top:hover:after {
-  height: 100%;
-}
-
-/* From Left */
-
-.from-left:before,
-.from-left:after {
-  top: 0;
-  width: 0;
-  height: 100%;
-}
-
-.from-left:before {
-  right: 0;
-  border: 1px solid $color__black;
-  border-left: 0;
-  border-right: 0;
-}
-
-.from-left:after {
-  left: 0;
-}
-
-.from-left:hover:before,
-.from-left:hover:after {
-  width: 100%;
-}
-
-/* From Right */
-
-.from-right:before,
-.from-right:after {
-  top: 0;
-  width: 0;
-  height: 100%;
-}
-
-.from-right:before {
-  left: 0;
-  border: 1px solid $color__black;
-  border-left: 0;
-  border-right: 0;
-}
-
-.from-right:after {
-  right: 0;
-}
-
-.from-right:hover:before,
-.from-right:hover:after {
-  width: 100%;
-}
-
-/* From Middle */
-
-.from-middle:before {
-  top: 0;
-  left: 50%;
-  height: 100%;
-  width: 0;
-  border: 1px solid $color__black;
-  border-left: 0;
-  border-right: 0;
-}
-
-.from-middle:after {
-  bottom: 0;
-  left: 0;
-  height: 0;
-  width: 100%;
-  background: $color__black;
-}
-
-.from-middle:hover:before {
-  left: 0;
-  width: 100%;
-}
-
-.from-middle:hover:after {
-  top: 0;
-  height: 100%;
-}
-
-/* From Bottom */
-
-.from-bottom:before,
-.from-bottom:after {
-  left: 0;
-  height: 0;
-  width: 100%;
-}
-
-.from-bottom:before {
-  top: 0;
-  border: 1px solid $color__black;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.from-bottom:after {
-  bottom: 0;
-  height: 0;
-}
-
-.from-bottom:hover:before,
-.from-bottom:hover:after {
-  height: 100%;
 }
