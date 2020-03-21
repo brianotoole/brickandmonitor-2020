@@ -28,6 +28,9 @@ $slug_name = get_post_field('post_name', get_post());
   
   <div class="hero__bg">
   <div class="hero__mask"></div>
+  <video autoplay muted loop>
+    <source src="<?php echo get_template_directory_uri(); ?>/dist/video/home-hero-broll2.mp4" type="video/mp4" />
+  </video>
   </div>
 </section><!--/.hero-->
 

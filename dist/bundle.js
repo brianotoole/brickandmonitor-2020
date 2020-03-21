@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img/home-hero-bg.jpg":[["home-hero-bg.4acd32aa.jpg","img/home-hero-bg.jpg"],"img/home-hero-bg.jpg"],"./img/home-hero-bg-mask.png":[["home-hero-bg-mask.04eeb9b1.png","img/home-hero-bg-mask.png"],"img/home-hero-bg-mask.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/headroom.js/dist/headroom.js":[function(require,module,exports) {
+},{"./img/home-hero-mask.png":[["home-hero-mask.575c101e.png","img/home-hero-mask.png"],"img/home-hero-mask.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/headroom.js/dist/headroom.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 /*!
@@ -1136,7 +1136,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52382" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52049" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
