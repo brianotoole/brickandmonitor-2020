@@ -96,9 +96,6 @@ ul li {
   margin: rem(20) 0 0 0;
   line-height: 1.5;
   font-size: rem(16);
-  @media (min-width: $tablet) {
-    font-size: rem(18);
-  }
 }
 
 ul li {
@@ -110,9 +107,6 @@ a {
   cursor: pointer;
   text-decoration: none;
   font-size: rem(16);
-  @media (min-width: $tablet) {
-    font-size: rem(18);
-  }
   &:hover,
   &:focus {
     text-decoration: none;

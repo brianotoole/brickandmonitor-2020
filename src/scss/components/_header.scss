@@ -7,12 +7,13 @@ $header-height: 145px;
 }
 .headroom--pinned {
   transform: translateY(0%);
+  background-color: $color__white!important;
+}
+.headroom--top {
+  background-color: transparent!important;
 }
 .headroom--unpinned {
   transform: translateY(-100%);
-}
-.headroom--not-top {
-  background: white;
 }
 
 .site-header {

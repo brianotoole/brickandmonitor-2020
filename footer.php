@@ -26,11 +26,11 @@ $footer_form = get_field( 'footer_form', 'options' );
         </ul><!-- /.footer__menu -->
       </li>
       <li>
-        <h6>Get in Touch</h6>
-        <address>111 Oak St <br>Tampa, FL<br>+1(555)555-5555</address>
+        <h6 class="subheading">Get in Touch</h6>
+        <address>112 N. 12th St. #1609 <br>Tampa, Florida 33602<br>813.816.2593</address>
       </li>
       <li>
-        <h6>Newsletter Sign Up</h6>
+        <h6 class="subheading">Newsletter Sign Up</h6>
         <div class="footer__form mc-field-group">
           <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
           <button class="btn--submit">Submit</button>
@@ -38,7 +38,7 @@ $footer_form = get_field( 'footer_form', 'options' );
       </li>
     </ul><!-- /.footer__sections -->
     <div class="footer__disclaimer">
-      <figure class="footer__mark"><?php get_template_part( "vector/icon", "logo-mark" ) ?></figure>
+      <figure class="footer__mark"><?php get_template_part( "vector/logo", "primary" ) ?></figure>
       <div class="footer__copy">
         <div class="footer__copy-inner">
           <li>&copy; 2020</li>

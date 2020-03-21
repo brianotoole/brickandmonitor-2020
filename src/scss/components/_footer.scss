@@ -71,10 +71,7 @@
     display: none;
   }
   svg {
-    width: 100px;
-  }
-  path {
-    color: $color__black;
+    width: 90px;
   }
 }
 
@@ -91,7 +88,7 @@
   li,
   a {
     display: inline;
-    font-size: rem(15);
+    font-size: rem(14);
   }
 }
 
@@ -108,7 +105,7 @@
   }
   a {
     display: inline-block;
-    margin-left: rem(10);
+    margin-left: rem(2.5);
   }
 }
 
