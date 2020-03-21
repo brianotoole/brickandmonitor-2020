@@ -85,7 +85,8 @@ function staggerInTeam() {
 staggerInTeam();
 */
 
-// Fade Text;
+// Fade Hero Text;
+/*
 $(document).ready(function() {
 	$(window).scroll(function() {
     var scrollPos = $(this).scrollTop();
@@ -95,7 +96,7 @@ $(document).ready(function() {
     });
 	});
 });
-
+*/
 
 
 // Page Loader

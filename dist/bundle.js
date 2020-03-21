@@ -1078,17 +1078,20 @@ function staggerInTeam() {
 }
 staggerInTeam();
 */
-// Fade Text;
+// Fade Hero Text;
 
-$(document).ready(function () {
-  $(window).scroll(function () {
+/*
+$(document).ready(function() {
+	$(window).scroll(function() {
     var scrollPos = $(this).scrollTop();
     $('.hero__content').css({
       //'margin-top': (scrollPos/4)+"px",
-      'opacity': 1 - scrollPos / 500
+      'opacity': 1-(scrollPos/500)
     });
-  });
-}); // Page Loader
+	});
+});
+*/
+// Page Loader
 
 var loadingTime = 900;
 var transitionTime = 1200;

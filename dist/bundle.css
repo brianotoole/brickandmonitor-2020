@@ -474,20 +474,29 @@ h6,
     .h6 {
       font-size: 1.25rem; } }
 
+.subheading {
+  font-family: freight-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: .4em;
+  text-transform: uppercase; }
+  .subheading--primary {
+    color: #003463; }
+
 p,
 .entry-content,
 .format-content,
 ul li {
-  color: #444;
   margin: 1.25rem 0 0 0;
   line-height: 1.5;
-  font-size: 1.125rem; }
+  font-size: 1rem; }
   @media (min-width: 768px) {
     p,
     .entry-content,
     .format-content,
     ul li {
-      font-size: 1.25rem; } }
+      font-size: 1.125rem; } }
 
 ul li {
   margin: 0; }
@@ -496,10 +505,10 @@ a {
   color: #daccc0;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.125rem; }
+  font-size: 1rem; }
   @media (min-width: 768px) {
     a {
-      font-size: 1.25rem; } }
+      font-size: 1.125rem; } }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -571,19 +580,19 @@ pre {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%; }
-  .btn--has-arrow, .nav-desktop li.nav-btn a {
+  .btn--has-line, .nav-desktop li.nav-btn a {
     position: relative;
-    padding-left: 3.125rem;
+    padding-left: 2.375rem;
     padding-right: 1.875rem;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     background: #003463;
     color: #ffffff; }
-    .btn--has-arrow:before, .nav-desktop li.nav-btn a:before {
+    .btn--has-line:before, .nav-desktop li.nav-btn a:before {
       content: '';
       position: absolute;
       background: #daccc0;
-      bottom: 27px;
+      bottom: 26px;
       display: block;
       height: 2px;
       left: -60px;
@@ -592,6 +601,12 @@ pre {
       padding-right: 1.75rem;
       -webkit-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out; }
+
+.line {
+  display: inline-block;
+  background: #daccc0;
+  height: 2px;
+  width: 70px; }
 
 input,
 textarea {
@@ -2040,7 +2055,8 @@ textarea {
       font-size: 3.875rem; } }
 
 .hero__subtitle {
-  margin-bottom: 1rem;
+  display: inline-block;
+  padding-left: 0.625rem;
   font-family: freight-sans-pro, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2789,16 +2805,11 @@ textarea {
   text-align: center; }
 
 /*********************************************************
-  404
+  Home
 *********************************************************/
-.Error-404 {
-  padding: 60px 20px; }
-
-.Error-404__title {
-  margin: 0; }
-
-.Error-404__subtitle {
-  margin: 0; }
+@media (min-width: 768px) {
+  .intro {
+    padding-bottom: 7.5rem; } }
 
 /*********************************************************
   About
@@ -2907,6 +2918,18 @@ textarea {
       -ms-flex-preferred-size: 12.28571%;
           flex-basis: 12.28571%;
       max-width: 12.28571%; } }
+
+/*********************************************************
+  404
+*********************************************************/
+.Error-404 {
+  padding: 60px 20px; }
+
+.Error-404__title {
+  margin: 0; }
+
+.Error-404__subtitle {
+  margin: 0; }
 
 /*********************************************************
     Animations
@@ -3142,7 +3165,8 @@ textarea {
   * Background Colors
   */
 .u-bg-primary {
-  background-color: #003463; }
+  background-color: #003463;
+  color: #fff; }
 
 .u-bg-secondary {
   background-color: #daccc0; }

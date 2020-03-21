@@ -90,7 +90,8 @@ $header-height: 0px;
 }
 
 .hero__subtitle {
-  margin-bottom: 1rem;
+  display: inline-block;
+  padding-left: rem(10);
   @include subheading;
 }
 

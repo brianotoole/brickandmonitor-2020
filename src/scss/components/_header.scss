@@ -94,7 +94,7 @@ $header-height: 145px;
 
 .nav-desktop li.nav-btn {
   a {
-    @extend .btn--has-arrow;
+    @extend .btn--has-line;
     margin-left: rem(100);
   }
 }

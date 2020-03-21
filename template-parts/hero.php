@@ -18,7 +18,7 @@ $slug_name = get_post_field('post_name', get_post());
 <section class="row hero hero--home hero--full-height hero--<?php echo $hero_background_position ?>" style="background-image:url('<?php echo $hero_image['url']; ?>');">
   <div class="hero__content container js-reveal-text">
       <h1 class="hero__title"><?php echo (!empty($hero_title) ? ''.$hero_title.'' : ''.the_title().'') ?></h1>
-      <p class="hero__subtitle"><?php echo $hero_subtitle; ?></p>
+      <span class="line"></span> <p class="hero__subtitle"><?php echo $hero_subtitle; ?></p>
       <?php if ($hero_button) : ?>
       <div class="hero__btn-container">
         <a href="<?php echo $hero_button['url']; ?>" target="<?php echo $hero_button['target']; ?>" class="btn btn--transparent from-bottom"><?php echo $hero_button['title']; ?></a>
