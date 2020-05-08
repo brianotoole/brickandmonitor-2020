@@ -117,3 +117,10 @@
 .u-font-body {
   font-family: $font__body;
 }
+
+
+.u-pad-r-0-md {
+  @media(min-width: $tablet) {
+    padding-right: 0;
+  }
+}

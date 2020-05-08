@@ -10,8 +10,8 @@ import './entry.scss';
 
 // COMPONENTS
 require("./js/components/nav.js");
-require("./js/components/social-sharing.js");
 require("./js/components/bs-modal.js");
+require("./js/components/slider-work.js");
 
 // Classes
 //import Modal from "./classes/modal";s

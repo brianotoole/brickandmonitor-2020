@@ -668,36 +668,7 @@ $(document).on("keyup", function (e) {
     navClose();
   }
 });
-},{"headroom.js":"../node_modules/headroom.js/dist/headroom.js"}],"js/components/social-sharing.js":[function(require,module,exports) {
-/**
-  * Social Sharing Links
-  */
-$('.js-social-share').click(function (e) {
-  // we're not going to go to the link, just pull data from it
-  e.preventDefault(); // decide what social share url string to use based on 'data-social' value
-
-  var social = $(this).data('social'); // pull the a href value
-
-  var url = $(this).attr('href'); // pop window parameters
-
-  var window_args = "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600";
-  var share_link;
-
-  if (url === '' || url === '#') {
-    url = window.location.href;
-  }
-
-  if (social === 'facebook') {
-    share_link = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-  } else if (social === 'twitter') {
-    share_link = "https://twitter.com/intent/tweet?url=" + url;
-  } else {
-    share_link = "https://www.linkedin.com/shareArticle?mini=true&url=" + url;
-  }
-
-  window.open(share_link, "", window_args);
-});
-},{}],"js/components/bs-modal.js":[function(require,module,exports) {
+},{"headroom.js":"../node_modules/headroom.js/dist/headroom.js"}],"js/components/bs-modal.js":[function(require,module,exports) {
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*
@@ -999,6 +970,19 @@ if (typeof jQuery === 'undefined') {
     Plugin.call($target, option, this);
   });
 }(jQuery);
+},{}],"js/components/slider-work.js":[function(require,module,exports) {
+$(document).ready(function () {
+  $('.slider').slick({
+    draggable: true,
+    arrows: false,
+    dots: true,
+    fade: true,
+    speed: 900,
+    infinite: true,
+    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+    touchThreshold: 100
+  });
+});
 },{}],"entry.js":[function(require,module,exports) {
 "use strict";
 
@@ -1013,9 +997,9 @@ require("./entry.scss");
 // COMPONENTS
 require("./js/components/nav.js");
 
-require("./js/components/social-sharing.js");
+require("./js/components/bs-modal.js");
 
-require("./js/components/bs-modal.js"); // Classes
+require("./js/components/slider-work.js"); // Classes
 //import Modal from "./classes/modal";s
 //var modal = new Modal();
 // TEMPLATES
@@ -1111,7 +1095,7 @@ tlLoading.staggerTo(".loader-text span", .5, {
   color: "#999",
   scale: 1.05
 }, 0.05); //tl.from(".hero__content", .6, {autoAlpha:0,ease: Linear.easeNone})
-},{"./entry.scss":"entry.scss","./js/components/nav.js":"js/components/nav.js","./js/components/social-sharing.js":"js/components/social-sharing.js","./js/components/bs-modal.js":"js/components/bs-modal.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./entry.scss":"entry.scss","./js/components/nav.js":"js/components/nav.js","./js/components/bs-modal.js":"js/components/bs-modal.js","./js/components/slider-work.js":"js/components/slider-work.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

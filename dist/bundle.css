@@ -490,7 +490,7 @@ p,
 ul li {
   margin: 1.25rem 0 0 0;
   line-height: 1.5;
-  font-size: 1rem; }
+  font-size: 1.125rem; }
 
 ul li {
   margin: 0; }
@@ -498,7 +498,7 @@ ul li {
 a {
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem; }
+  font-size: 1.125rem; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -2776,6 +2776,30 @@ textarea {
   .services__col ul li {
     color: #f9f9f9; }
 
+.slideshow {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  max-width: 700px;
+  margin: 0;
+  margin-top: -150px; }
+  .slideshow .slider-track {
+    -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 1s cubic-bezier(0.7, 0, 0.3, 1); }
+  .slideshow .item {
+    height: 100%;
+    position: relative;
+    z-index: 1; }
+    .slideshow .item img {
+      width: 100%;
+      -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+      transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    .slideshow .item.slick-active img {
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+
 .section-testimonials #scrolling-section {
   margin-top: 75px;
   margin-bottom: 75px; }
@@ -3192,6 +3216,10 @@ textarea {
 
 .u-font-body {
   font-family: neue-haas-grotesk-display, sans-serif; }
+
+@media (min-width: 768px) {
+  .u-pad-r-0-md {
+    padding-right: 0; } }
 
 
 /*# sourceMappingURL=bundle.css.map */

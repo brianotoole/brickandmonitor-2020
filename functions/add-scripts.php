@@ -16,6 +16,12 @@ function mu_scripts() {
 		// scrollmagic
 		wp_enqueue_script( 'scroll-magic', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js', array('jquery'), false, true );
 
+		// jq easing
+		wp_enqueue_script( 'scroll-magic', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'), false, true );
+
+		// slick slider
+		wp_enqueue_script( 'slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js', '1.0', false );
+
 		// scroll magic - debug
 		//wp_enqueue_script( 'scroll-magic-debug', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', '1.0', false );
 
