@@ -18,13 +18,15 @@
 <body <?php body_class(); ?>>
 
 <!-- LOADING -->
+<!--
 <div class="loader-wrapper" id="loader">
   <div class="team-loader">
     <div id="loader-text" class="loader-text">
       <span>&</span>
-     </div><!-- /.loader-text -->
-  </div><!-- /.team-loader -->
-</div><!-- /.loader-wrapper -->
+     </div>
+  </div>
+</div>
+-->
 <!--/LOADER -->
 
 

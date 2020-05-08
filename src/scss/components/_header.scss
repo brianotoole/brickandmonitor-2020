@@ -10,7 +10,9 @@ $header-height: 145px;
   background-color: $color__white!important;
 }
 .headroom--top {
-  background-color: transparent!important;
+  @media (min-width: $tablet) {
+    background-color: transparent!important;
+  }
 }
 .headroom--unpinned {
   transform: translateY(-100%);
@@ -26,7 +28,7 @@ $header-height: 145px;
   margin: 0;
   padding-top: rem(15);
   padding-bottom: rem(15);
-  background: transparent;
+  background-color: $color__white;
   color: $color__primary;
   z-index: 999;
   @media (min-width: $tablet) {

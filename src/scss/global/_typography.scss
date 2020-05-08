@@ -10,7 +10,7 @@ h5,
 h6 {
   font-family: $font__heading;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.175;
   letter-spacing: -0.03em;
   text-transform: capitalize;
   &:not(:first-child) {
@@ -103,7 +103,6 @@ ul li {
 }
 
 a {
-  color: $color__secondary;
   cursor: pointer;
   text-decoration: none;
   font-size: rem(16);

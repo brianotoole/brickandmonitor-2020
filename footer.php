@@ -30,11 +30,7 @@ $footer_form = get_field( 'footer_form', 'options' );
         <address>112 N. 12th St. #1609 <br>Tampa, Florida 33602<br>813.816.2593</address>
       </li>
       <li>
-        <h6 class="subheading">Newsletter Sign Up</h6>
-        <div class="footer__form mc-field-group">
-          <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
-          <button class="btn--submit">Submit</button>
-        </div>
+        <a href="#" class="btn btn--primary">Start a Project</a>
       </li>
     </ul><!-- /.footer__sections -->
     <div class="footer__disclaimer">
