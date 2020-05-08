@@ -1971,8 +1971,8 @@ textarea {
     Hero
 *********************************************************/
 .hero {
+  height: 800px;
   position: relative;
-  height: 725px;
   background-color: #fff;
   color: #003463;
   background-size: cover;
@@ -1980,7 +1980,7 @@ textarea {
   background-repeat: no-repeat; }
   @media (max-width: 768px) {
     .hero {
-      height: 575px; } }
+      height: 725px; } }
   .hero--home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1988,19 +1988,6 @@ textarea {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
-  .single .hero:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.85)));
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85)); }
-  .hero--interior {
-    height: 520px; }
-  .hero--full-height {
-    height: calc(100vh - 0px); }
   .hero--has-overlay {
     position: relative; }
     .hero--has-overlay:before {
